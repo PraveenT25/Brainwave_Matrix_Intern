@@ -20,4 +20,5 @@ function add_task(){
 
     //after adding the task input box will be emplty 
     inputBox.value = ''
+    
 }
