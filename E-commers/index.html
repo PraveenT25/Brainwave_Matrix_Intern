@@ -2,46 +2,169 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E-commerce Website</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
 </head>
 <body>
   <header>
-    <h1>Welcome to My E-commerce Store</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
-    </nav>
+    <div class="nav">
+
+      <a href="#" class="logo">
+        <ion-icon name="bonfire-outline"></ion-icon>
+        P-Stickers
+      </a>
+
+      <div class="box">
+        <div class="cart-count">0</div>
+        <ion-icon name="cart"  id="cart-icon" ></ion-icon>
+      </div>
+
+      <div class="cart">
+        <div class="cart-title">Cart Items</div>
+        <div class="cart-content">
+
+        </div>
+        
+      <div class="total">
+        <div class="total-title">Total</div>
+        <div class="total-price">Rs.0</div>
+      </div>
+
+      <button class="btn-buy">Place Order</button>
+
+      <ion-icon name="close" id="cart-close"></ion-icon>
+
+      </div>
+    </div>
   </header>
 
   <div class="banner">
     <!-- //images -->
   </div>
 
-  <section class="products">
-    <h2>Stickers</h2>
-    <div class="product-list">
-      <div class="product" data-id="1">
-        <img src="images/pandan gula melaka.webp" alt="Product 1">
-        <h3>Product 1</h3>
-        <p>100.00</p>
-        <button onclick="addToCart(1)">Add to Cart</button>
+
+  <div class="container">
+    <h2 class="title">STICKERS</h2>
+    <div class="shop-content">
+
+
+      <div class="stick-box">
+        <div class="pic">
+          <img src="./images/BATMAN-LOGO.webp" class="stick-img">
+        </div>
+        <h2 class="stick-title">Batman</h2>
+        <span class="stick-price">Rs.40</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
       </div>
-      <div class="product" data-id="2">
-        <img src="images/BlackForest02.webp" alt="Product 2">
-        <h3>Product 2</h3>
-        <p>150.00</p>
-        <button onclick="addToCart(2)">Add to Cart</button>
+
+
+      <div class="stick-box">
+        <div class="pic"><img src="./images/bongo-cat.jpg" class="stick-img"></div>
+        <h2 class="stick-title">Bongo Cat</h2>
+        <span class="stick-price">Rs.65</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
       </div>
-      <!-- Add more products as needed -->
+  
+      <div class="stick-box">
+        <div class="pic"><img src="./images/Deadpool-mask.webp" class="stick-img"></div>
+        <h2 class="stick-title">Deadpool Mask</h2>
+        <span class="stick-price">Rs.80</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="stick-box">
+        <div class="pic">
+          <img src="./images/isro.webp" class="stick-img">
+        </div>
+        <h2 class="stick-title">ISRO</h2>
+        <span class="stick-price">Rs.40</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="stick-box">
+        <div class="pic">
+          <img src="./images/kakashi-pose.webp" class="stick-img">
+        </div>
+        <h2 class="stick-title">Kakashi</h2>
+        <span class="stick-price">Rs.40</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="stick-box">
+        <div class="pic">
+          <img src="./images/Sasuke.webp" class="stick-img">
+        </div>
+        <h2 class="stick-title">Sasuke</h2>
+        <span class="stick-price">Rs.40</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+  
+      <div class="stick-box">
+        <div class="pic">
+          <img src="./images/Spider-Man Chibi.webp" class="stick-img">
+        </div>
+        <h2 class="stick-title">Spider-Man chibi</h2>
+        <span class="stick-price">Rs.40</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+  
+      <div class="stick-box">
+        <div class="pic">
+          <img src="./images/spider-man-venom.webp" class="stick-img">
+        </div>
+        <h2 class="stick-title">spider-man-venom</h2>
+        <span class="stick-price">Rs.40</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="stick-box">
+        <div class="pic">
+          <img src="./images/squid game.webp" class="stick-img">
+        </div>
+        <h2 class="stick-title">Squid Game</h2>
+        <span class="stick-price">Rs.40</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="stick-box">
+        <div class="pic">
+          <img src="./images/Stay-focused.webp" class="stick-img">
+        </div>
+        <h2 class="stick-title">Stay-focused</h2>
+        <span class="stick-price">Rs.40</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="stick-box">
+        <div class="pic">
+          <img src="./images/wakanda-forever.jpg" class="stick-img">
+        </div>
+        <h2 class="stick-title">wakanda-forever</h2>
+        <span class="stick-price">Rs.40</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="stick-box">
+        <div class="pic">
+          <img src="./images/first-avengers.webp" class="stick-img">
+        </div>
+        <h2 class="stick-title">Frist Avengers</h2>
+        <span class="stick-price">Rs.40</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+
+
+
+
     </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2024 My E-commerce Store</p>
-  </footer>
-
-  <script src="main.js"></script>
+  </div>
+  <script src="./main.js"></script>
 </body>
 </html>
