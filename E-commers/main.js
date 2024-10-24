@@ -1,14 +1,21 @@
 const btnCart=document.querySelector('#cart-icon');
 const cart=document.querySelector('.cart');
 const btnClose=document.querySelector('#cart-close');
+const byebtn=document.querySelector('.btn-buy');
 
 btnCart.addEventListener('click',()=>{
   cart.classList.add('cart-active');
+  
 });
 
 btnClose.addEventListener('click',()=>{
   cart.classList.remove('cart-active');
 });
+
+ byebtn.addEventListener('click',()=>{
+  alert('Thank you for your purchase!');
+  cart.classList.remove('cart-active');
+  });
 
 document.addEventListener('DOMContentLoaded',loadFood);
 
@@ -18,7 +25,7 @@ function loadFood(){
 }
 
 function loadContent(){
-  //Remove Food Items  From Cart
+  //Remove Items  From Cart
   let btnRemove=document.querySelectorAll('.cart-remove');
   btnRemove.forEach((btn)=>{
     btn.addEventListener('click',removeItem);

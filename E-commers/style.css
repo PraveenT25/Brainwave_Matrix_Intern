@@ -38,6 +38,13 @@ header{
   color:#100f0f;
 }
 
+#logo-name{
+  font-size: 1.8rem;
+  padding-top: 10px;
+  color: #d45b15;
+}
+
+
 .box{
   color:white;
   width: 30px;
@@ -259,4 +266,11 @@ transform: scale(1.5);
   right: 0.8rem;
   font-size: 2rem;
   cursor: pointer;
+}
+
+.footer{
+  width: 100%;
+  font-size: 1rem;
+  text-align: center;
+  background-color: #ffffff;
 }
